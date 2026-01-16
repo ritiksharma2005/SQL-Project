@@ -1,147 +1,132 @@
-# 📊 DATA-DOMAIN-CUSTOMERS & SALES-ANALYSIS (SQL + Python) 
+# 📊 Customer & Sales Analysis using SQL and Python
 
-📌 Project Overview
+## 📌 Project Overview
+This project focuses on analyzing **customer behavior and sales performance** using a combination of **SQL and Python**.  
+The dataset contains **10,000+ records** across **7 relational tables**, including customers, orders, payments, products, sellers, and geolocation data.
 
-This project focuses on analyzing customer behavior and sales performance using a combination of SQL and Python.
-The dataset contains 10,000+ records spread across 7 relational tables, covering customers, orders, payments, products, sellers, and locations.
+The objective is to transform raw transactional data into **actionable business insights** that support data-driven decision-making.
 
-The goal of this project is to extract meaningful business insights by solving real-world analytical questions using SQL, supported by Python for data preprocessing and visualization.
+---
 
-🗂️ Dataset Description
+## 🎯 Project Objectives
+The primary objectives of this project are to:
 
+- Convert raw, multi-table transactional data into a **clean and structured relational dataset**
+- Analyze customer purchasing behavior and regional sales patterns
+- Evaluate product category performance and seller contribution
+- Answer real-world business questions using SQL
+- Support insights through Python-based preprocessing and visualization
+
+
+---
+
+## 📊 Business Value & Impact
+This project enables stakeholders to:
+
+- Identify **high-revenue product categories and top-performing sellers**
+- Understand **customer demand across different regions**
+- Analyze payment behavior and repeat purchasing patterns
+- Optimize marketing, inventory, and sales strategies using data-backed insights
+
+---
+
+## 🗂️ Dataset Description
 The analysis is based on the following tables:
 
-customers – customer details and location
+- **customers** – customer details and location  
+- **geolocation** – geographic coordinates of customers  
+- **orders** – order-level information  
+- **order_items** – products included in each order  
+- **payments** – payment value, type, and installments  
+- **products** – product category and attributes  
+- **sellers** – seller-level details  
 
-geolocation – latitude and longitude data
+These tables are connected using primary and foreign keys, enabling relational analysis.
 
-orders – order-level information
+---
 
-order_items – products included in each order
+## 🛠️ Tools & Technologies Used
+- **SQL** – data querying and business analysis  
+- **Python (Pandas)** – data cleaning and preprocessing  
+- **Matplotlib** – data visualization  
+- **Jupyter Notebook** – SQL and Python integration  
+- **CSV Files** – raw data storage  
 
-payments – payment type, value, and installments
+---
 
-products – product category and attributes
+## 🔍 Project Workflow
 
-sellers – seller-level information
+### 1️⃣ Data Understanding
+- Explored all datasets to understand structure and relationships
+- Identified primary and foreign keys
+- Checked for missing values and inconsistencies
 
-Each table is connected using primary and foreign keys, enabling relational analysis.
+### 2️⃣ Data Preprocessing (Python)
+- Cleaned and standardized column names
+- Handled missing and duplicate values
+- Converted date columns into proper datetime formats
+- Prepared data for SQL analysis
 
-🛠️ Tools & Technologies Used
+### 3️⃣ SQL & Python Integration
+- Executed SQL queries within Jupyter Notebook
+- Stored query results in Pandas DataFrames
+- Used Python to further analyze and visualize SQL outputs
 
-SQL – data querying and analysis
-
-Python (Pandas) – data cleaning and preprocessing
-
-Matplotlib – data visualization
-
-Jupyter Notebook – SQL and Python integration
-
-CSV datasets – raw data storage
-
-🔍 Project Workflow (Step-by-Step)
-1️⃣ Data Understanding
-
-Explored all 7 tables to understand structure and relationships
-
-Identified primary and foreign keys
-
-Checked data types, missing values, and duplicates
-
-2️⃣ Data Preprocessing (Python – Pandas)
-
-Cleaned and standardized column names
-
-Handled missing and inconsistent values
-
-Converted date columns into proper datetime format
-
-Ensured data readiness for SQL analysis
-
-3️⃣ SQL & Python Integration
-
-Used Jupyter Notebook to connect SQL queries with Python
-
-Executed SQL queries inside notebooks
-
-Stored query results in Pandas DataFrames for further analysis
-
-4️⃣ SQL Analysis
-
+### 4️⃣ SQL Analysis
 The analysis is divided into three levels:
 
-🔹 Basic Analysis
+#### 🔹 Basic Analysis
+- Customer distribution by city and state
+- Total orders and yearly order trends
+- Category-wise sales analysis
 
-Customer distribution by city and state
+#### 🔹 Intermediate Analysis
+- Monthly order trends
+- Revenue contribution by product category
+- Seller performance and ranking
+- Product demand analysis
 
-Total orders and yearly trends
+#### 🔹 Advanced Analysis
+- Customer retention rate
+- Moving average of order values
+- Year-over-year sales growth
+- Top customers by yearly spending
 
-Category-wise sales overview
+---
 
-🔹 Intermediate Analysis
+## 📈 Data Visualization
+- Created visualizations using **Matplotlib** to represent:
+  - Monthly and yearly sales trends
+  - Revenue distribution across categories
+  - Seller revenue comparison
+  - Customer purchasing behavior
 
-Monthly order trends
+These visualizations help convert numerical outputs into actionable insights.
 
-Revenue contribution by category
+---
 
-Seller performance and ranking
+## 🧠 Key Business Questions Addressed
+- How are customers distributed across different cities and states?
+- Which product categories contribute the most to revenue?
+- What percentage of orders are paid in installments?
+- Who are the top-performing sellers?
+- How does customer retention impact total sales?
+- Which customers generate the highest lifetime value?
 
-Product demand patterns
+---
 
-🔹 Advanced Analysis
+---
 
-Customer retention rate
+## ✅ Project Outcomes
+By the end of this project, the business will have:
 
-Moving averages of order values
+- A **well-structured and reliable database** created from raw and unorganized inputs  
+- A **SQL-driven analytical system** capable of handling large volumes of customer and sales data  
+- Clear insights into **customer distribution, revenue trends, and seller performance**  
+- Visual outputs that simplify complex data into understandable patterns  
+- Actionable insights that enable **faster and more informed business decisions**
 
-Year-over-year sales growth
 
-Top customers by yearly spending
+## 📁 Repository Structure
 
-All questions and solutions are written with clear business context, SQL queries, and explanations.
-
-📈 Data Visualization
-
-Used Matplotlib to visualize:
-
-Monthly order trends
-
-Revenue distribution by category
-
-Seller revenue comparison
-
-Customer purchasing patterns
-
-Visuals help translate raw numbers into actionable insights
-
-🧠 Key Business Questions Solved
-
-Some of the major questions addressed in this project include:
-
-How are customers distributed geographically?
-
-Which product categories generate the most revenue?
-
-What percentage of orders are paid in installments?
-
-Who are the top-performing sellers?
-
-How does customer retention impact revenue?
-
-Which customers contribute the highest lifetime value?
-
-📄 Complete list of questions is available in the SQL analysis section 
-
-Questions
-
-📊 Key Insights
-
-A small number of product categories contribute a large share of revenue
-
-Sales show clear monthly and yearly seasonality
-
-Customer retention significantly impacts total sales
-
-Top sellers generate a disproportionate amount of revenue
-
-Repeat customers have higher average order values
+Author: [ RITIK SHARMA ]
